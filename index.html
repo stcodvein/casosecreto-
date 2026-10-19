@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARQUIVO 017 — O CASO DA TERÇA-FEIRA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="crt-overlay"></div>
+    <div class="noise-overlay"></div>
+
+    <main class="container">
+        <!-- SEÇÃO 1: TELA INICIAL -->
+        <section id="sec-1" class="step-section active">
+            <div class="folder-header">
+                <span class="stamp top-secret">CONFIDENCIAL</span>
+                <span class="file-tag">DOSSIÊ #017-B</span>
+            </div>
+            
+            <h1 class="main-title">ARQUIVO 017</h1>
+            <h2 class="sub-title">O CASO DA TERÇA-FEIRA</h2>
+
+            <div class="terminal-box">
+                <div class="terminal-header">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                    <span class="terminal-title">system_log.sh</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="term-line"><span class="term-prompt">&gt;</span> Inicializando varredura de memórias...</p>
+                    <p class="term-line green-text">[OK] 6 registros encontrados. 1 identidade ocultada.</p>
+                    <p class="term-line warn-text">[AVISO] A terça-feira reaparece em todos os relatórios.</p>
+                    <p class="term-line blink"><span class="term-prompt">&gt;</span> Aguardando autorização de acesso...</p>
+                </div>
+            </div>
+
+            <p class="narrative-intro">
+                O documento a seguir contém o registro detalhado de uma ocorrência inexplicável.
+                Recomenda-se cautela no manuseio das evidências afetivas.
+            </p>
+
+            <button id="btn-sec-1" class="btn btn-primary">ABRIR DOSSIÊ</button>
+        </section>
+
+        <!-- SEÇÃO 2: RELATÓRIO INICIAL -->
+        <section id="sec-2" class="step-section hidden">
+            <div class="folder-header">
+                <span class="stamp warning">RELATÓRIO PRELIMINAR</span>
+            </div>
+
+            <h2 class="section-title">SUMÁRIO EXECUTIVO</h2>
+
+            <div class="paper-card">
+                <p><strong>OBJETO DA INVESTIGAÇÃO:</strong> O colapso repentino da linha temporal de uma amizade e os desdobramentos de um afastamento não planejado.</p>
+                <hr class="divider">
+                <p>Durante a auditoria inicial, foram identificados registros de uma conexão singular, duas cláusulas não oficiais de convivência e a presença de uma terça-feira que alterou o rumo dos acontecimentos.</p>
+                <br>
+                <p><em>Nota do Auditor:</em> O investigador responsável por este arquivo demonstra claro viés emocional, falhas de julgamento prévias e aparente incapacidade de esquecer detalhes específicos. Prossiga por sua própria conta e risco.</p>
+            </div>
+
+            <button id="btn-sec-2" class="btn btn-primary">CONSULTAR EVIDÊNCIAS</button>
+        </section>
+
+        <!-- SEÇÃO 3: ÍNDICE DE EVIDÊNCIAS -->
+        <section id="sec-3" class="step-section hidden">
+            <div class="folder-header">
+                <span class="stamp audit">EVIDÊNCIAS</span>
+            </div>
+
+            <h2 class="section-title">ÍNDICE DE REGISTROS</h2>
+            <p class="section-subtitle">Examine todos os documentos para prosseguir com o diagnóstico do sistema.</p>
+
+            <div class="progress-bar-container">
+                <div class="progress-info">
+                    <span>PROGRESSO DA AUDITORIA:</span>
+                    <span id="progress-text">0 / 5</span>
+                </div>
+                <div class="progress-track">
+                    <div id="progress-fill" class="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="evidence-list">
+                <button class="evidence-item" data-doc="doc-1">
+                    <span class="doc-code">INCIDENTE_001</span>
+                    <span class="doc-title">O caso Anakin</span>
+                    <span class="doc-status" id="status-doc-1">NÃO LIDO</span>
+                </button>
+
+                <button class="evidence-item" data-doc="doc-2">
+                    <span class="doc-code">ANOMALIA_002</span>
+                    <span class="doc-title">A terça-feira</span>
+                    <span class="doc-status" id="status-doc-2">NÃO LIDO</span>
+                </button>
+
+                <button class="evidence-item" data-doc="doc-3">
+                    <span class="doc-code">CONTRATO_003</span>
+                    <span class="doc-title">A cláusula do beijo</span>
+                    <span class="doc-status" id="status-doc-3">NÃO LIDO</span>
+                </button>
+
+                <button class="evidence-item" data-doc="doc-4">
+                    <span class="doc-code">CONTRATO_004</span>
+                    <span class="doc-title">A cláusula da mordida</span>
+                    <span class="doc-status" id="status-doc-4">NÃO LIDO</span>
+                </button>
+
+                <button class="evidence-item" data-doc="doc-5">
+                    <span class="doc-code">REGISTRO_005</span>
+                    <span class="doc-title">O submundo</span>
+                    <span class="doc-status" id="status-doc-5">NÃO LIDO</span>
+                </button>
+            </div>
+
+            <button id="btn-sec-3" class="btn btn-primary btn-disabled" disabled>AVANÇAR COM O DIAGNÓSTICO</button>
+        </section>
+
+        <!-- SEÇÃO 4: ERRO NO SISTEMA -->
+        <section id="sec-4" class="step-section hidden">
+            <div class="terminal-box glitch-box">
+                <div class="terminal-header red-bg">
+                    <span class="dot red"></span>
+                    <span class="dot red"></span>
+                    <span class="dot red"></span>
+                    <span class="terminal-title">CRITICAL_SYSTEM_FAILURE.log</span>
+                </div>
+                <div class="terminal-body red-text">
+                    <p class="term-line">[ERRO] Falha na criptografia do investigador.</p>
+                    <p class="term-line">[ERRO] Identidade não encontrada nos registros oficiais.</p>
+                    <p class="term-line">[ERRO] Identidade localizada dentro das memórias.</p>
+                    <p class="term-line highlight-glitch">[ERRO] Sobrenome detectado: MORPHEUS.</p>
+                    <p class="term-line">[SISTEMA] Rompendo camada analítica... Transição para o ambiente onírico iniciada.</p>
+                </div>
+            </div>
+
+            <p class="narrative-text">
+                As barreiras do arquivo confidencial estão desmoronando. O relatório não consegue mais manter o tom distante e impessoal.
+            </p>
+
+            <button id="btn-sec-4" class="btn btn-primary glitch-btn">SEGUIR A ANOMALIA</button>
+        </section>
+
+        <!-- SEÇÃO 5: O SUBMUNDO -->
+        <section id="sec-5" class="step-section hidden mythic-theme">
+            <div class="mythic-header">
+                <span class="greek-symbol">⚔ 𓅓 ⚔</span>
+                <h2 class="section-title mythic-title">Nem Hades consegue arquivar tudo.</h2>
+            </div>
+
+            <div class="paper-card mythic-card">
+                <p>No vasto panteão da Grécia Antiga, Hades governa o invisível com rigor, Perséfone transita entre o mundo das sombras e as estações da terra, e Zeus geralmente consegue complicar a vida de todo mundo sem prestar contas.</p>
+                <br>
+                <p>Mas existe uma constante que nenhum mito explicou adequadamente: nenhum deus ensinou o responsável por este arquivo a dizer as coisas certas no momento exato.</p>
+                <br>
+                <blockquote class="mythic-quote">
+                    “O arquivo não está investigando uma terça-feira. Está investigando por que alguém ainda pensa nela.”
+                </blockquote>
+            </div>
+
+            <button id="btn-sec-5" class="btn btn-mythic">REVELAR O RESPONSÁVEL</button>
+        </section>
+
+        <!-- SEÇÃO 6: IDENTIDADE DESCOBERTA -->
+        <section id="sec-6" class="step-section hidden">
+            <div class="folder-header">
+                <span class="stamp reveal">IDENTIDADE CONFIRMADA</span>
+            </div>
+
+            <h1 class="investigator-name">ELOY MORPHEUS</h1>
+            <p class="investigator-role">O Responsável pelo Arquivo</p>
+
+            <div class="paper-card">
+                <p>Fui eu quem criou cada pasta, cada registro e cada linha deste caso.</p>
+                <p>Esta investigação inteira foi apenas a minha forma atrapalhada de tentar lidar com os meus próprios erros, com as lembranças do que vivemos e com a saudade que permaneceu.</p>
+                <p>Não soube demonstrar a sua importância no momento certo e deixei que o silêncio e a distância parecessem indiferença. Mas nunca foi indiferença.</p>
+            </div>
+
+            <button id="btn-sec-6" class="btn btn-primary">LER DECLARAÇÃO FINAL</button>
+        </section>
+
+        <!-- SEÇÃO 7: PEDIDO DE DESCULPAS -->
+        <section id="sec-7" class="step-section hidden">
+            <div class="dossier-final">
+                <div class="dossier-watermark">DECLARAÇÃO</div>
+                <div class="final-text-body">
+Leona,
+
+me desculpa pelos meus erros e por não ter demonstrado o quanto você era importante pra mim. sinto falta das nossas conversas, das nossas cláusulas idiotas e até das pequenas coisas que só faziam sentido pra gente.
+
+não posso mudar o que aconteceu, mas queria ter a chance de fazer diferente daqui pra frente. não espero que tudo volte a ser como antes, só queria que você soubesse que ainda quero você por perto.
+
+— eloy morpheus, o responsável pelo caso da terça-feira.
+                </div>
+            </div>
+
+            <div class="decision-box">
+                <h3 class="decision-prompt">Qual será a sentença do responsável?</h3>
+                <div class="decision-buttons" id="decision-area">
+                    <button id="btn-forgive" class="btn btn-forgive">conceder perdão ao coitado 🥹</button>
+                    <button id="btn-reject" class="btn btn-reject">rejeitar o perdão 💔</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 8: TELA DE PERDÃO -->
+        <section id="sec-8" class="step-section hidden">
+            <div class="pardon-card">
+                <span class="stamp resolved">CASO EM RESOLUÇÃO</span>
+                <h2 class="pardon-title">PERDÃO CONCEDIDO.</h2>
+                <div class="paper-card">
+                    <p class="pardon-main-text">aparentemente, eloy morpheus ganhou mais uma chance. recomenda-se que o indivíduo não estrague tudo dessa vez.</p>
+                    <hr class="divider">
+                    <p class="pardon-sub-text">obrigado por me ouvir, leona. prometo que o próximo relatório vai ser menos vergonhoso.</p>
+                </div>
+                <button id="btn-restart" class="btn btn-secondary">REABRIR ARQUIVO (REINICIAR)</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- MODAL PARA EVIDÊNCIAS -->
+    <div id="evidence-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span id="modal-doc-code" class="modal-doc-code">DOCUMENTO</span>
+                <button id="btn-close-modal" class="modal-close" aria-label="Fechar">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3 id="modal-title" class="modal-title">Título do Documento</h3>
+                <div id="modal-text" class="modal-text">Conteúdo...</div>
+            </div>
+            <div class="modal-footer">
+                <button id="btn-mark-read" class="btn btn-primary">MARCAR COMO LIDO E VOLTAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
